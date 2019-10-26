@@ -25,15 +25,21 @@ public class Prob1114 {
         Scanner in = new Scanner(System.in);
             arr1.add(in.nextInt());
         }
+        System.out.println("Enter 5 Integer Numbers For List:2");
+        for (int j = 0 ; j <5 ; j++){
+        Scanner input = new Scanner(System.in);
+            arr2.add(input.nextInt());
         
-        combinedArr= union(arr1);
+        }
+        combinedArr= union(arr1,arr2);
         for (int j = 0 ; j <combinedArr.size() ; j++)
         System.out.print(combinedArr.get(j) + " ");
         
     }
-    public static ArrayList<Integer> union( ArrayList<Integer> list1){
+    public static ArrayList<Integer> union( ArrayList<Integer> list1 , ArrayList<Integer> list2){
         ArrayList<Integer> combinedArr = new ArrayList<>();
         combinedArr.addAll(list1);
+        combinedArr.addAll(list2);
       
 
         
